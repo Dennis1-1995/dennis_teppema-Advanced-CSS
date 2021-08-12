@@ -1,0 +1,62 @@
+// Variables::
+$opacityLow: 0.7;
+
+// Grid
+.grid {
+  width: 75%;
+  margin: auto;
+  display: grid;
+  justify-items: center;
+  margin-top: 50px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 10px;
+  //Tablet
+  @media screen and (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  //Desktop
+  @media screen and (min-width: 1024px) {
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+  }
+}
+
+// Portfolio
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  padding: 0 20px;
+  &:hover {
+    .btn {
+      opacity: 1;
+    }
+    img {
+      filter: brightness(0%);
+      opacity: $opacityLow;
+    }
+  }
+  .img-portfolio {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    &:hover {
+      filter: brightness(0%);
+      opacity: $opacityLow;
+    }
+  }
+  .btn {
+    position: absolute;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    color: black;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+  }
+}

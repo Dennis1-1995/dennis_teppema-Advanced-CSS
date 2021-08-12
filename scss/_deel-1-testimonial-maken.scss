@@ -1,0 +1,38 @@
+// Variables:
+$colorWhite: #fff;
+
+.container-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .card {
+    width: 350px;
+    margin-top: 2rem;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 7px 8px 8px 5px #bba5a57e;
+    .card-header {
+      background-color: $colorWhite;
+      padding: 50px 20px 100px 20px;
+    }
+    .card-footer {
+      background-color: #686de0;
+      padding-bottom: 2rem;
+      color: $colorWhite;
+      text-align: center;
+      .img-card {
+        width: 125px;
+        border-radius: 100px;
+        color: $colorWhite;
+        border: 5px solid;
+        margin: -50px 0 10px 0;
+      }
+      h2 {
+        margin-bottom: 1rem;
+      }
+      p {
+        color: #bbb8b8;
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+@import "./deel-1-testimonial-maken";
+@import "./deel-2-portfolio-grid";
+@import "./deel-3-social-media-buttons";
+
+// Global
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #c3cfe2;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
